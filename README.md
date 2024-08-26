@@ -2,7 +2,7 @@
 * make a table listing questions from the article that you don't know and the knowledge topic that you think you will have learn to be able to understand and replicate similar studies in the future.
 
 ### Effects of Cytochrome P450 2C19 and Paraoxonase 1 Polymorphisms on Antiplatelet Response to Clopidogrel Therapy in Patients with Coronary Artery Disease
-(Tresukosol, et al. PLoS One. 2014)
+[(Tresukosol, et al. PLoS One. 2014)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110188)
   
 Questions from the article | Knowledge topic that I will have learn
 --------------------------|----------------
@@ -22,5 +22,5 @@ What is an in vitro metabolomic profiling technique? |
 ### Molecular investigation by whole exome sequencing revealed a high proportion of pathogenic variants among Thai victims of sudden unexpected death syndrome
 (Suktitipat, et al. PLoS One. 2017)
   
-questions/knowledge topic | How do I learn
+Questions from the article | Knowledge topic that I will have learn
 --------------------------|----------------
