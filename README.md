@@ -10,7 +10,7 @@ Are genetic polymorphisms associated with SNPs? | SNPs
 Why does this article need to analyze Linkage disequilibrium (LD)?  | Linkage disequilibrium (LD)
 What is the epistatic interaction? Why does this article analyse this? Are epistatic interactions related to gene-gene interactions? | gene-gene interactions
 What are the odds ratio (OR) and the hazard ratio (HR) and what is the difference between both? | 
-What is the principle of the guanidine-HCl method? Is this a standard method? Are there other methods to isolate genomic DNA? | standard method for isolate DNA
+What is the principle of the guanidine-HCl method? Is this a standard method? Are there other methods to isolate genomic DNA? | standard method for isolating DNA
 What is PCR-RFLP and how are PCR and PCR-RFLP different? | 
 Why does this article use the Chi-square test or Fisher’s exact test to test for a possible deviation of genotype distribution from Hardy-Weinberg equilibrium (HWE) proportions? | Hardy-Weinberg equilibrium (HWE), Chi-square test, and Fisher’s exact test
 What is the additive genetic model? | additive genetic model
@@ -23,4 +23,16 @@ What is an in vitro metabolomic profiling technique? |
 [(Suktitipat, et al. PLoS One. 2017)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0180056)
   
 Questions from the article | Knowledge topic that I will have learn
---------------------------|----------------
+--------------------------|-------------------
+What are the symptoms of Sudden unexpected death syndrome? | Sudden unexpected death syndrome
+What is Brugada syndrome (BrS)? What are its symptoms? How is it different from SUDS? | Brugada syndrome (BrS)
+What is the difference between autopsy and molecular autopsy? And what additional tests or diagnoses does molecular autopsy have? | molecular autopsy
+What is whole exome sequencing? How is it different from whole genome sequencing? | Whole exome sequencing (WES)
+What type of data does the dbNSFP database store? What types of data is it suitable for? | dbNSFP database
+What information does the ClinVar database store? What kind of applications is it suitable for? | ClinVar database
+What is the variant prediction algorithm? | variant prediction algorithm
+What is Meta-SVM algorithm? | Meta-SVM algorithm
+How do public databases, such as the 1000 Genome Project, ESP6500 project, and the Exome Aggregation Consortium (ExAc) project, store data differently? | 1000 Genome Project, ESP6500 project, and the Exome Aggregation Consortium (ExAc) project
+Why the use of Amphetamine is a characteristic of sudden unexpected death syndrome (SUDS) patients? How is the use of Amphetamine related to SUDS? |
+Why is it necessary to collect data on the weight of the heart, left lung, right lung, and brain? How do these relate to SUDS? |
+ .  | types of mutations
