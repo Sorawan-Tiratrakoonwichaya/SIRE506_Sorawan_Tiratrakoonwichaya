@@ -1,0 +1,119 @@
+---
+title: "assignment2"
+author: "Sorawan Tiratrakoonwichaya"
+date: "2024-09-10"
+output: html_document
+---
+
+## Import dataset
+
+```{r}
+
+library(readr)
+train <- read_csv("./data/train.csv")
+View(train)
+
+```
+
+## Install gtsummary package
+
+```{r}
+
+install.packages("gtsummary")
+
+```
+
+## Install ggplot2 package
+
+```{r}
+
+install.packages("ggplot2")  
+
+```
+
+## Install flextable package
+
+```{r}
+
+install.packages("flextable")
+
+```
+
+
+#Table 1
+
+```{r}
+
+library(gtsummary)
+library(ggplot2)
+library(flextable)
+
+# Create the summary table 
+table1 <- train %>%
+  select(Survived, Age, Fare, Pclass, Sex, SibSp, Parch) %>%
+  tbl_summary(
+    by = Survived,
+    label = list(
+      SibSp ~ "Number of siblings/spouses aboard", 
+      Parch ~ "Number of parents/children aboard",
+      Pclass ~ "Ticket class"
+    ),
+    # Customize the summary statistics for numeric variables to display IQR as (Q1, Q3)
+    statistic = list(
+      all_continuous() ~ "{median} ({IQR})"
+    )
+  ) %>%
+  modify_header(label = "Variable") %>%
+  modify_spanning_header(all_stat_cols() ~ "Survival Status")
+
+# Convert to flextable
+table1_flex <- as_flex_table(table1)
+
+# Print the table
+print(table1_flex)
+```
+
+
+## Boxplot
+# Age by survival
+```{r}
+
+Box_age <- ggplot (train, aes(x = as.factor(Survived), y = Age)) +
+    geom_boxplot(outlier.colour = "salmon", outlier.shape = 16, outlier.size = 3) +
+    labs(x = "Survived", y = "Age", title = "Boxplot of Age Distribution by Survival Status with Outliers")
+Box_age
+
+```
+
+# Fare by survival
+
+```{r}
+
+Box_fare <- ggplot (train, aes(x = as.factor(Survived), y = Fare)) +
+    geom_boxplot(outlier.colour = "lightgreen", outlier.shape = 16, outlier.size = 3) +
+    labs(x = "Survived", y = "Fare", title = "Boxplot of Fare Distribution by Survival Status with Outliers")
+Box_fare
+
+```
+
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
